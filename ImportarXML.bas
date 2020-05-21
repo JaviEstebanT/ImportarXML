@@ -1,6 +1,4 @@
-Attribute VB_Name = "MÛdulo2"
 Sub ImportarXML()
-Attribute ImportarXML.VB_ProcData.VB_Invoke_Func = " \n14"
 
 'Creo las variables de ruta para los archivos de origen y temporales
 
@@ -38,7 +36,7 @@ Attribute ImportarXML.VB_ProcData.VB_Invoke_Func = " \n14"
         Kill ArchTemp
         Kill Ruta & Fecha & "-data_export.xml.zip"
 
-'Ordeno las filas por fecha de m·s antiguo a m·s nuevo
+'Ordeno las filas por fecha de m√°s antiguo a m√°s nuevo
 
     ActiveWorkbook.Worksheets("hoja1").ListObjects("Tabla13").Sort.SortFields. _
         Clear
@@ -53,7 +51,7 @@ Attribute ImportarXML.VB_ProcData.VB_Invoke_Func = " \n14"
         .Apply
     End With
     
-'Filtro las columnas que no me aportan informaciÛn
+'Filtro las columnas que no me aportan informaci√≥n
 
     Columns("N:N").ColumnWidth = 16.71
     Columns("A:E").Select
